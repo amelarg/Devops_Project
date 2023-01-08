@@ -39,7 +39,7 @@ services:
   frontend-app:
     depends_on:
       - backend-app
-    image: $NEXUS_REPOSITORY/redone/frontend:$TAG
+    image: $NEXUS_REPOSITORY/amel/frontend:$TAG
     restart: unless-stopped
     env_file: ./.env
     ports:
